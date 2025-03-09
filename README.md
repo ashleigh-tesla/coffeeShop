@@ -1,2 +1,2 @@
-# coffeeShop
-This is Ashleigh's Brewtopia Coffee Shop
+# Coffee Shop
+This is Ashleigh's Brewtopia
