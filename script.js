@@ -1,18 +1,43 @@
+// get hero section from DOM
 let heroSection = document.querySelector(".hero");
 
-// changeBackgroundImage = () => {
-//   heroSection.style.backgroundImage =
-//     "url('https://images.unsplash.com/photo-1596952954288-16862d37405b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')";
-// };
+// function to change background color of hero section and color of text in hero section
+// the changeBackgroundColor function takes color as an argument
 
-changeBackgroundColor = (color) => {
-  if (color == "espresso") heroSection.style.background = "#3C2218";
-  if (color == "latte") heroSection.style.background = "#FFF8E7";
-  if (color == "cappuccino") heroSection.style.background = "#B3A393";
-  // if ((color = americano)) heroSection.style.background = "#6D4C41";
-  // if ((color = mocha)) heroSection.style.background = "#3C2218";
-  // if ((color = macchiato)) heroSection.style.background = "#FFF8E7";
-  // if ((color = ristretto)) heroSection.style.background = "#B3A393";
-  // if ((color = espresso)) heroSection.style.background = "#6D4C41";
-  else return;
+changeBackgroundColor = (coffeeType) => {
+  // if coffee is espresso, background color is #6D4C41 and text color is #FFFFFF
+  if (coffeeType == "espresso") {
+    heroSection.style.background = "#6D4C41";
+    heroSection.style.color = "#FFFFFF";
+  }
+  if (coffeeType == "latte") {
+    // if coffee is latte, background color is #FFF8E7 and text color is #000000
+    heroSection.style.background = "#FFF8E7";
+    heroSection.style.color = "#000000";
+  }
+  // if coffee is cappuccino, background color is #B3A393 and text color is #FFFFFF
+  if (coffeeType == "cappuccino") {
+    heroSection.style.background = "#B3A393";
+    heroSection.style.color = "#FFFFFF";
+  }
+  // if coffee is americano, background color is #6D4C41 and text color is #FFFFFF
+  if (coffeeType == "americano") {
+    heroSection.style.background = "#6D4C41";
+    heroSection.style.color = "#FFFFFF";
+  }
+  // if coffee is mocha, background color is #3C2218 and text color is #FFFFFF
+  if (coffeeType == "mocha") {
+    heroSection.style.background = "#3C2218";
+    heroSection.style.color = "#FFFFFF";
+  }
+  // if coffee is macchiato, background color is #FFF8E7 and text color is #000000
+  if (coffeeType == "macchiato") {
+    heroSection.style.background = "#FFF8E7";
+    heroSection.style.color = "#000000";
+  }
+  // if coffee is ristretto, background color is #B3A393 and text color is #FFFFFF
+  if (coffeeType == "ristretto") {
+    heroSection.style.background = "#B3A393";
+    heroSection.style.color = "#FFFFFF";
+  } else return;
 };
